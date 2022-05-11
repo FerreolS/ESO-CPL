@@ -10,5 +10,5 @@ make && make shared && make install && cd .. &&\
 wget https://ftp.eso.org/pub/dfs/pipelines/libraries/wcslib/wcslib-7.6.tar.bz2 && mkdir -p /usr/local/share/man/man1 &&\ 
 tar -xvjf wcslib-7.6.tar.bz2 && cd wcslib-7.6 && ./configure && make && make install && cd .. &&\
 wget https://ftp.eso.org/pub/dfs/pipelines/libraries/cpl/cpl-7.1.4.tar.gz && tar -xvzf cpl-7.1.4.tar.gz 
-# cd cpl-7.1.4 &&  ./configure  --with-fftw-libs=/usr && make && make install
+cd cpl-7.1.4 &&  ./configure  --with-fftw-libs=/usr && make && make install
 ENTRYPOINT bash
